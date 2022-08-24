@@ -20,7 +20,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className='ui container' style={{ marginTop: '20px' }}>
+            <div className='ui container' style={{ marginTop: '20px', paddingBottom: '50px' }}>
                 <SearchBar onSubmit={this.onSearchSubmit} />
                 <br />
                 <h4>Found {this.state.images.length} images</h4>
