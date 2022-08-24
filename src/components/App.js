@@ -7,11 +7,11 @@ import Footer from './Footer';
 class App extends React.Component {
     state = { images: [] };
 
-    onSearchSubmit = async (term) => {
+    onSearchSubmit = async (term, num) => {
         const response = await Unsplash.get('/search/photos', {
             params: {
                 query: term,
-                per_page: 20
+                per_page: num // 20
             }
         });
         this.setState({ images: response.data.results });
