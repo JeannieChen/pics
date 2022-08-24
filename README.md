@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This App can be viewed at [Search Pics App] https://jeanniechen.github.io/pics/.
+This App can be viewed at [Search Pics App](https://jeanniechen.github.io/pics/).
 
 ## Available Scripts
 
