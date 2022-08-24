@@ -11,7 +11,7 @@ class SearchBar extends React.Component {
     render() {
         return (
             <div className="ui search">
-                <label>Image Search: </label><br />
+                <h3>Search Image: </h3>
                 <form
                     className="ui icon input form"
                     onSubmit={this.onFormSubmit}
@@ -19,7 +19,7 @@ class SearchBar extends React.Component {
                     <input
                         className="prompt"
                         type="text"
-                        placeholder="i.e. car"
+                        placeholder="i.e. goldendoodle"
                         value={this.state.term}
                         onChange={(e) => this.setState({ term: e.target.value })}
                     />
