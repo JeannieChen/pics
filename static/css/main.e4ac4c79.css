@@ -1,0 +1,2 @@
+.image-list{grid-gap:0 20px;display:grid;grid-auto-rows:20px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.image-list img{grid-row-end:span 0;width:250px}.footer{background-color:#ffe388;bottom:0;left:0;margin-top:1rem;padding:.5rem;position:fixed;text-align:center;width:100%}
+/*# sourceMappingURL=main.e4ac4c79.css.map*/
