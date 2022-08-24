@@ -1,8 +1,8 @@
 import React from 'react';
-import SearchBar from './SearchBar';
 import Unsplash from '../api/Unsplash';
+import SearchBar from './SearchBar';
 import ImageList from './ImageList';
-
+import Footer from './Footer';
 
 class App extends React.Component {
     state = { images: [] };
@@ -11,20 +11,23 @@ class App extends React.Component {
         const response = await Unsplash.get('/search/photos', {
             params: {
                 query: term,
-                per_page: 10
+                per_page: 20
             }
         });
         this.setState({ images: response.data.results });
     }
 
+
     render() {
         return (
             <div className='ui container' style={{ marginTop: '20px' }}>
-                <SearchBar onSubmit={this.onSearchSubmit} /> <br />
-
+                <SearchBar onSubmit={this.onSearchSubmit} />
+                <br />
+                <h4>Found {this.state.images.length} images</h4>
                 <ImageList images={this.state.images} />
 
-                <h4> Found {this.state.images.length} images </h4>
+                <br />
+                <Footer />
             </div>
         );
     }
